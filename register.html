@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Homework - SH Mankge - FSL7CU</title>
+  <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
+  <!--    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+
+<body >
+
+<section id="Navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand" href="#">Homework</a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="login">
+        <input class="form-control me-2" type="text" placeholder="User name" aria-label="Username">
+        <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
+        <button class="btn btn-outline-primary me-2" type="submit">Login</button>
+        <a href="register.html" class="btn btn-outline-secondary">Register</a>
+      </form>
+    </div>
+  </nav>
+</section>
+
+<section id="RegistrationForm">
+  <!-- Include Bootstrap CSS and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="card shadow">
+          <div class="card-header bg-light">
+            <h4 class="mb-0 text-start">Registration</h4>
+          </div>
+          <div class="card-body">
+            <form action="todo.html" method="get" class="row g-3">
+
+              <!-- Email -->
+              <div class="col-md-6 col-12">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-person-fill"></i></span>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+              </div>
+
+              <!-- Password -->
+              <div class="col-md-6 col-12">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-lock-fill"></i></span>
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+                </div>
+              </div>
+
+              <!-- Age -->
+              <div class="col-md-4 col-12">
+                <label for="age" class="form-label">Age</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-calendar-fill"></i></span>
+                  <input type="number" id="age" name="age" class="form-control" placeholder="Enter your age" min="18" max="99" required>
+                </div>
+              </div>
+
+              <!-- Sex -->
+              <div class="col-md-4 col-12">
+                <label for="sex" class="form-label">Sex</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-gender-ambiguous"></i></span>
+                  <select id="sex" name="sex" class="form-select" required>
+                    <option value="" disabled selected>Select sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Neptun Code -->
+              <div class="col-md-4 col-12">
+                <label for="neptun" class="form-label">Neptun Code</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-key-fill"></i></span>
+                  <input type="text" id="neptun" name="neptun" class="form-control"
+                         placeholder="e.g. ABC123"
+                         pattern="^[A-Za-z][A-Za-z0-9]{5}$"
+                         title="6 characters: first a letter, followed by 5 alphanumeric characters"
+                         required>
+                </div>
+              </div>
+
+              <!-- Introduction -->
+              <div class="col-12">
+                <label for="intro" class="form-label">Introduction</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-chat-left-text-fill"></i></span>
+                  <textarea id="intro" name="intro" class="form-control" rows="5" maxlength="500"
+                            placeholder="Tell us about yourself..."></textarea>
+                </div>
+              </div>
+
+              <!-- Terms -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                  <label class="form-check-label" for="terms">
+                    I accept the terms and conditions
+                  </label>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="col-md-8"></div>
+              <div class="col-md-2 col-6 d-grid">
+                <a href="index.html" class="btn btn-danger">Cancel</a>
+              </div>
+              <div class="col-md-2 col-6 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</section>
+
+<br>
+<br>
+
+<section id="footerSection">
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light border-top">
+    <p class="mb-0 text-muted">&copy; 2025 Homework To-Do Manager — Built with Bootstrap by SH Mankge</p>
+  </footer>
+
+</section>
+
+<script src="todo.js" type="text/javascript"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
