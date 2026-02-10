@@ -20,11 +20,12 @@ form.onsubmit = function (event) {
   }
 };
 
+// Added two buttons the up and down
 var buttons = [
   { action: "done", icon: "ok" },
   { action: "active", icon: "plus" },
   { action: "inactive", icon: "minus" },
-  { action: "up", icon: "chevron-up" }, // SH Mankge
+  { action: "up", icon: "chevron-up" },
   { action: "down", icon: "chevron-down" },
   { action: "remove", icon: "trash" }
 
@@ -131,15 +132,15 @@ function renderTodos() {
     todoList.appendChild(div1);
   });
 
-  // ✅ Update badges after rendering
+  // Updating badges after rendering
   updateBadges();
-  saveTodos(); // ✅ Save every time the list changes
+  saveTodos(); // I need to  Save every time the list changes
 }
 
 loadTodos();
 renderTodos();
 
-// ✅ Function to update badge counts
+// Function to update badge counts
 function updateBadges() {
   var allCount = todos.length;
   var activeCount = todos.filter(function (t) { return t.state === "active"; }).length;
@@ -152,6 +153,7 @@ function updateBadges() {
   document.getElementById("badge-done").textContent = doneCount;
 }
 
+// Function to select tab
 function selectTab(element) {
   var tabName = element.attributes["data-tab-name"].value;
   currentTab = tabName;
